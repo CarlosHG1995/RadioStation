@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3596A44246CBF1200C8A874 /* StationEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3596A42246CBF1100C8A874 /* StationEntity+CoreDataClass.swift */; };
+		D3596A45246CBF1200C8A874 /* StationEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3596A43246CBF1200C8A874 /* StationEntity+CoreDataProperties.swift */; };
+		D3F1019C245F5E7B0038F247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F1019B245F5E7B0038F247 /* AppDelegate.swift */; };
+		D3F1019E245F5E7B0038F247 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F1019D245F5E7B0038F247 /* SceneDelegate.swift */; };
+		D3F101A0245F5E7B0038F247 /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F1019F245F5E7B0038F247 /* TagsViewController.swift */; };
+		D3F101A3245F5E7B0038F247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3F101A1245F5E7B0038F247 /* Main.storyboard */; };
+		D3F101A5245F5E7D0038F247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F101A4245F5E7D0038F247 /* Assets.xcassets */; };
+		D3F101A8245F5E7D0038F247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3F101A6245F5E7D0038F247 /* LaunchScreen.storyboard */; };
+		D3F101B5245FB1300038F247 /* TagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F101B4245FB1300038F247 /* TagCell.xib */; };
+		D3F101B7245FB2D60038F247 /* TagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F101B6245FB2D60038F247 /* TagCell.swift */; };
+		D3F101B9245FBFDA0038F247 /* RadioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F101B8245FBFDA0038F247 /* RadioAPI.swift */; };
+		D3F101C324635A710038F247 /* StationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F101C224635A710038F247 /* StationsViewController.swift */; };
+		D3F101CC246396E80038F247 /* StationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F101CB246396E80038F247 /* StationCell.swift */; };
+		D3F101CE2463973C0038F247 /* StationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F101CD2463973C0038F247 /* StationCell.xib */; };
+		D3F101D42466FD180038F247 /* RadioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F101D32466FD180038F247 /* RadioPlayerViewController.swift */; };
+		D3F101D62467029D0038F247 /* UIImageView+UrlImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F101D52467029D0038F247 /* UIImageView+UrlImage.swift */; };
+		D3F101D9246768310038F247 /* RadioStation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3F101D7246768310038F247 /* RadioStation.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D3596A42246CBF1100C8A874 /* StationEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StationEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D3596A43246CBF1200C8A874 /* StationEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StationEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D3F10198245F5E7B0038F247 /* RadioStation_Carlos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioStation_Carlos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F1019B245F5E7B0038F247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3F1019D245F5E7B0038F247 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D3F1019F245F5E7B0038F247 /* TagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
+		D3F101A2245F5E7B0038F247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3F101A4245F5E7D0038F247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3F101A7245F5E7D0038F247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3F101A9245F5E7D0038F247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3F101B4245FB1300038F247 /* TagCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCell.xib; sourceTree = "<group>"; };
+		D3F101B6245FB2D60038F247 /* TagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCell.swift; sourceTree = "<group>"; };
+		D3F101B8245FBFDA0038F247 /* RadioAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioAPI.swift; sourceTree = "<group>"; };
+		D3F101C224635A710038F247 /* StationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewController.swift; sourceTree = "<group>"; };
+		D3F101CB246396E80038F247 /* StationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCell.swift; sourceTree = "<group>"; };
+		D3F101CD2463973C0038F247 /* StationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationCell.xib; sourceTree = "<group>"; };
+		D3F101D32466FD180038F247 /* RadioPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioPlayerViewController.swift; sourceTree = "<group>"; };
+		D3F101D52467029D0038F247 /* UIImageView+UrlImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+UrlImage.swift"; sourceTree = "<group>"; };
+		D3F101D8246768310038F247 /* RadioStation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RadioStation.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3F10195245F5E7B0038F247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3F1018F245F5E7B0038F247 = {
+			isa = PBXGroup;
+			children = (
+				D3F1019A245F5E7B0038F247 /* RadioStation_Carlos */,
+				D3F10199245F5E7B0038F247 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3F10199245F5E7B0038F247 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3F10198245F5E7B0038F247 /* RadioStation_Carlos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3F1019A245F5E7B0038F247 /* RadioStation_Carlos */ = {
+			isa = PBXGroup;
+			children = (
+				D3F101B0245F5F1A0038F247 /* Extensions */,
+				D3F101B1245F5F280038F247 /* Controller */,
+				D3F101B2245F5F320038F247 /* View */,
+				D3F101B3245F5F400038F247 /* Model */,
+				D3F101AF245F5EA40038F247 /* Supporting Files */,
+				D3F1019D245F5E7B0038F247 /* SceneDelegate.swift */,
+				D3F101A1245F5E7B0038F247 /* Main.storyboard */,
+				D3F101A4245F5E7D0038F247 /* Assets.xcassets */,
+				D3F101A9245F5E7D0038F247 /* Info.plist */,
+			);
+			path = RadioStation_Carlos;
+			sourceTree = "<group>";
+		};
+		D3F101AF245F5EA40038F247 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3F101A6245F5E7D0038F247 /* LaunchScreen.storyboard */,
+				D3F1019B245F5E7B0038F247 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3F101B0245F5F1A0038F247 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D3F101D52467029D0038F247 /* UIImageView+UrlImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D3F101B1245F5F280038F247 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D3F1019F245F5E7B0038F247 /* TagsViewController.swift */,
+				D3F101C224635A710038F247 /* StationsViewController.swift */,
+				D3F101D32466FD180038F247 /* RadioPlayerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D3F101B2245F5F320038F247 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3F101CB246396E80038F247 /* StationCell.swift */,
+				D3F101CD2463973C0038F247 /* StationCell.xib */,
+				D3F101B6245FB2D60038F247 /* TagCell.swift */,
+				D3F101B4245FB1300038F247 /* TagCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D3F101B3245F5F400038F247 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3596A42246CBF1100C8A874 /* StationEntity+CoreDataClass.swift */,
+				D3596A43246CBF1200C8A874 /* StationEntity+CoreDataProperties.swift */,
+				D3F101B8245FBFDA0038F247 /* RadioAPI.swift */,
+				D3F101D7246768310038F247 /* RadioStation.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3F10197245F5E7B0038F247 /* RadioStation_Carlos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3F101AC245F5E7D0038F247 /* Build configuration list for PBXNativeTarget "RadioStation_Carlos" */;
+			buildPhases = (
+				D3F10194245F5E7B0038F247 /* Sources */,
+				D3F10195245F5E7B0038F247 /* Frameworks */,
+				D3F10196245F5E7B0038F247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadioStation_Carlos;
+			productName = RadioStation_Carlos;
+			productReference = D3F10198245F5E7B0038F247 /* RadioStation_Carlos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3F10190245F5E7B0038F247 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = UPV;
+				TargetAttributes = {
+					D3F10197245F5E7B0038F247 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = D3F10193245F5E7B0038F247 /* Build configuration list for PBXProject "RadioStation_Carlos" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3F1018F245F5E7B0038F247;
+			productRefGroup = D3F10199245F5E7B0038F247 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3F10197245F5E7B0038F247 /* RadioStation_Carlos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3F10196245F5E7B0038F247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F101CE2463973C0038F247 /* StationCell.xib in Resources */,
+				D3F101B5245FB1300038F247 /* TagCell.xib in Resources */,
+				D3F101A8245F5E7D0038F247 /* LaunchScreen.storyboard in Resources */,
+				D3F101A5245F5E7D0038F247 /* Assets.xcassets in Resources */,
+				D3F101A3245F5E7B0038F247 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3F10194245F5E7B0038F247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F101B7245FB2D60038F247 /* TagCell.swift in Sources */,
+				D3F101C324635A710038F247 /* StationsViewController.swift in Sources */,
+				D3F101CC246396E80038F247 /* StationCell.swift in Sources */,
+				D3F101A0245F5E7B0038F247 /* TagsViewController.swift in Sources */,
+				D3F101D9246768310038F247 /* RadioStation.xcdatamodeld in Sources */,
+				D3F1019C245F5E7B0038F247 /* AppDelegate.swift in Sources */,
+				D3F101D62467029D0038F247 /* UIImageView+UrlImage.swift in Sources */,
+				D3596A45246CBF1200C8A874 /* StationEntity+CoreDataProperties.swift in Sources */,
+				D3F101D42466FD180038F247 /* RadioPlayerViewController.swift in Sources */,
+				D3596A44246CBF1200C8A874 /* StationEntity+CoreDataClass.swift in Sources */,
+				D3F101B9245FBFDA0038F247 /* RadioAPI.swift in Sources */,
+				D3F1019E245F5E7B0038F247 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D3F101A1245F5E7B0038F247 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3F101A2245F5E7B0038F247 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3F101A6245F5E7D0038F247 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3F101A7245F5E7D0038F247 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3F101AA245F5E7D0038F247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3F101AB245F5E7D0038F247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3F101AD245F5E7D0038F247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RadioStation_Carlos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "es.upv.epsa.RadioStation-Carlos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3F101AE245F5E7D0038F247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RadioStation_Carlos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "es.upv.epsa.RadioStation-Carlos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3F10193245F5E7B0038F247 /* Build configuration list for PBXProject "RadioStation_Carlos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3F101AA245F5E7D0038F247 /* Debug */,
+				D3F101AB245F5E7D0038F247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3F101AC245F5E7D0038F247 /* Build configuration list for PBXNativeTarget "RadioStation_Carlos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3F101AD245F5E7D0038F247 /* Debug */,
+				D3F101AE245F5E7D0038F247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D3F101D7246768310038F247 /* RadioStation.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D3F101D8246768310038F247 /* RadioStation.xcdatamodel */,
+			);
+			currentVersion = D3F101D8246768310038F247 /* RadioStation.xcdatamodel */;
+			path = RadioStation.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D3F10190245F5E7B0038F247 /* Project object */;
+}

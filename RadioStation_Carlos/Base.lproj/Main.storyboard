@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ixz-HM-gA4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tags view controller-->
+        <scene sceneID="15y-bX-CPj">
+            <objects>
+                <tableViewController title="Tags view controller" interfaceStyle="light" id="q6S-fv-Cew" customClass="TagsViewController" customModule="RadioStation_Carlos" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LQg-A4-jMF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="q6S-fv-Cew" id="BNV-rs-EWR"/>
+                            <outlet property="delegate" destination="q6S-fv-Cew" id="Sgq-kL-KRK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Tags" prompt="Tag Listado Estaciones" id="Lck-1Z-iXV">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="star.fill" catalog="system" id="tsc-Yo-lAR">
+                            <color key="tintColor" red="0.10881672639999999" green="0.63959390859999998" blue="0.29666301820000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="btn_favoritos:" destination="q6S-fv-Cew" id="QlR-Jf-l12"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="ov9-bY-R0Q" kind="show" identifier="showStationsForTag" id="B8a-pR-MVZ"/>
+                        <segue destination="ov9-bY-R0Q" kind="show" identifier="showFavorites" id="A7L-e1-OvA"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uNk-e6-vFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1423.1884057971015" y="-116.51785714285714"/>
+        </scene>
+        <!-- -->
+        <scene sceneID="Zxc-sm-8w6">
+            <objects>
+                <viewController id="ov9-bY-R0Q" customClass="StationsViewController" customModule="RadioStation_Carlos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kaz-kb-BVB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jWP-NW-a5E">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ov9-bY-R0Q" id="u5B-BJ-HB1"/>
+                                    <outlet property="delegate" destination="ov9-bY-R0Q" id="8xJ-7O-wQd"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jWP-NW-a5E" firstAttribute="trailing" secondItem="UIQ-Aa-3Zu" secondAttribute="trailing" id="Q1J-1L-zq9"/>
+                            <constraint firstAttribute="bottom" secondItem="jWP-NW-a5E" secondAttribute="bottom" id="fGu-zY-HBB"/>
+                            <constraint firstItem="jWP-NW-a5E" firstAttribute="top" secondItem="Kaz-kb-BVB" secondAttribute="top" id="ib1-Sc-sJb"/>
+                            <constraint firstItem="jWP-NW-a5E" firstAttribute="leading" secondItem="UIQ-Aa-3Zu" secondAttribute="leading" id="nQq-Mz-rU4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UIQ-Aa-3Zu"/>
+                    </view>
+                    <navigationItem key="navigationItem" prompt="Listado de la estación seleccionada" id="3Zw-Rl-BGY">
+                        <string key="title" base64-UTF8="YES">
+CA
+</string>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tabla_station" destination="jWP-NW-a5E" id="nc5-pV-WnS"/>
+                        <segue destination="ZaF-dd-h1R" kind="show" identifier="showPlayer" id="sy2-ds-Hqs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FoR-Rb-fNR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2198.5507246376815" y="-117.1875"/>
+        </scene>
+        <!--Radio player-->
+        <scene sceneID="bZw-BN-8MF">
+            <objects>
+                <viewController id="ZaF-dd-h1R" customClass="RadioPlayerViewController" customModule="RadioStation_Carlos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uTc-WV-oo9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo-homero" translatesAutoresizingMaskIntoConstraints="NO" id="fkB-X6-dMb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.14999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xcc-xr-qZ9">
+                                <rect key="frame" x="14" y="637" width="368" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="Z5k-tE-A5x"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="volumen_slider:" destination="ZaF-dd-h1R" eventType="valueChanged" id="7q8-IS-8Km"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHj-Or-sao">
+                                <rect key="frame" x="16" y="502" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Go1-Mc-SJH"/>
+                                    <constraint firstAttribute="width" constant="60" id="gln-ha-Edd"/>
+                                </constraints>
+                                <state key="normal" image="favorito"/>
+                                <connections>
+                                    <action selector="btn_fav:" destination="ZaF-dd-h1R" eventType="touchUpInside" id="HkN-Hj-xXX"/>
+                                </connections>
+                            </button>
+                            <button alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7om-Wd-Tau">
+                                <rect key="frame" x="114" y="372" width="168" height="160"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="168" id="PnN-Vv-iRD"/>
+                                </constraints>
+                                <state key="normal" image="play-music_icon-icons.com_71385"/>
+                                <connections>
+                                    <action selector="btn_play:" destination="ZaF-dd-h1R" eventType="touchUpInside" id="Nmy-Sn-bfT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cambio del volumen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Du-KR-wUD">
+                                <rect key="frame" x="20" y="605" width="275" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="TxV-I5-zcu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo de reproducción 00:00 segs" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efP-tf-ii4">
+                                <rect key="frame" x="20" y="674" width="356" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="Wes-Qy-mLW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cartoon-radio" translatesAutoresizingMaskIntoConstraints="NO" id="jkY-DS-qMB">
+                                <rect key="frame" x="107" y="164" width="200" height="200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado de la emisora" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhv-lU-HGU">
+                                <rect key="frame" x="66" y="737" width="282" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="ZgX-hu-Dmh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xcc-xr-qZ9" firstAttribute="top" secondItem="4Du-KR-wUD" secondAttribute="bottom" constant="8" id="03e-T3-gPN"/>
+                            <constraint firstItem="jkY-DS-qMB" firstAttribute="top" secondItem="uTc-WV-oo9" secondAttribute="topMargin" constant="-10" id="0aF-aD-Tyt"/>
+                            <constraint firstItem="xzL-Sr-4yT" firstAttribute="trailing" secondItem="7om-Wd-Tau" secondAttribute="trailing" constant="132" id="4Jk-Je-j1A"/>
+                            <constraint firstItem="jkY-DS-qMB" firstAttribute="leading" secondItem="xzL-Sr-4yT" secondAttribute="leading" constant="107" id="BIw-j8-Tmw"/>
+                            <constraint firstItem="Qhv-lU-HGU" firstAttribute="trailing" secondItem="uTc-WV-oo9" secondAttribute="trailingMargin" constant="-46" id="D5g-m4-gp0"/>
+                            <constraint firstItem="xzL-Sr-4yT" firstAttribute="bottom" secondItem="efP-tf-ii4" secondAttribute="bottom" constant="117" id="DcN-Gi-NaI"/>
+                            <constraint firstItem="fkB-X6-dMb" firstAttribute="centerX" secondItem="uTc-WV-oo9" secondAttribute="centerX" id="E4D-lb-6AY"/>
+                            <constraint firstItem="fkB-X6-dMb" firstAttribute="centerX" secondItem="xcc-xr-qZ9" secondAttribute="centerX" constant="9" id="HeC-Zt-g3k"/>
+                            <constraint firstItem="Qhv-lU-HGU" firstAttribute="top" secondItem="7om-Wd-Tau" secondAttribute="bottom" constant="205" id="KNo-cB-GPW"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="fkB-X6-dMb" secondAttribute="bottom" constant="-34" id="M6F-Fr-R0h"/>
+                            <constraint firstItem="Qhv-lU-HGU" firstAttribute="leading" secondItem="iHj-Or-sao" secondAttribute="trailing" constant="-10" id="MX0-TO-S5r"/>
+                            <constraint firstItem="efP-tf-ii4" firstAttribute="top" secondItem="xcc-xr-qZ9" secondAttribute="bottom" constant="8" id="PZ5-Ei-3Fm"/>
+                            <constraint firstItem="xcc-xr-qZ9" firstAttribute="leading" secondItem="xzL-Sr-4yT" secondAttribute="leading" constant="16" id="dcK-p4-dKf"/>
+                            <constraint firstItem="7om-Wd-Tau" firstAttribute="leading" secondItem="jkY-DS-qMB" secondAttribute="trailing" constant="-193" id="feL-lZ-fxN"/>
+                            <constraint firstItem="xcc-xr-qZ9" firstAttribute="top" secondItem="Qhv-lU-HGU" secondAttribute="bottom" constant="-208" id="g4T-TG-TTO"/>
+                            <constraint firstItem="iHj-Or-sao" firstAttribute="leading" secondItem="uTc-WV-oo9" secondAttribute="leadingMargin" constant="-4" id="gif-th-a6G"/>
+                            <constraint firstItem="4Du-KR-wUD" firstAttribute="top" secondItem="iHj-Or-sao" secondAttribute="bottom" constant="43" id="hph-xx-4sT"/>
+                            <constraint firstItem="fkB-X6-dMb" firstAttribute="centerY" secondItem="uTc-WV-oo9" secondAttribute="centerY" id="hqc-MW-rmT"/>
+                            <constraint firstItem="4Du-KR-wUD" firstAttribute="leading" secondItem="xzL-Sr-4yT" secondAttribute="leading" constant="20" id="imF-QQ-zjq"/>
+                            <constraint firstItem="xzL-Sr-4yT" firstAttribute="trailing" secondItem="efP-tf-ii4" secondAttribute="trailing" constant="38" id="joZ-pf-4r5"/>
+                            <constraint firstItem="fkB-X6-dMb" firstAttribute="leading" secondItem="jkY-DS-qMB" secondAttribute="leading" constant="-107" id="wx8-RJ-7Mu"/>
+                            <constraint firstItem="iHj-Or-sao" firstAttribute="leading" secondItem="efP-tf-ii4" secondAttribute="leading" constant="-4" id="xG7-sy-k26"/>
+                            <constraint firstItem="iHj-Or-sao" firstAttribute="top" secondItem="jkY-DS-qMB" secondAttribute="bottom" constant="138" id="yye-Sm-du6"/>
+                            <constraint firstItem="7om-Wd-Tau" firstAttribute="top" secondItem="xzL-Sr-4yT" secondAttribute="top" constant="198" id="zqJ-7t-ar6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xzL-Sr-4yT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Radio player" prompt="Radio player emisora seleccionada" id="1QT-eJ-5tl"/>
+                    <connections>
+                        <outlet property="btn_mas" destination="iHj-Or-sao" id="YhX-Wr-Vsc"/>
+                        <outlet property="icono_emisora" destination="jkY-DS-qMB" id="VAL-KP-2Le"/>
+                        <outlet property="icono_play" destination="7om-Wd-Tau" id="87Z-Np-kQG"/>
+                        <outlet property="lbl_estado" destination="Qhv-lU-HGU" id="F7Q-a3-LfU"/>
+                        <outlet property="lbl_tiempo_rep" destination="efP-tf-ii4" id="Yzu-Mg-687"/>
+                        <outlet property="vol_slider" destination="xcc-xr-qZ9" id="VSQ-vX-XY2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQD-6q-DHb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3001.449275362319" y="-116.51785714285714"/>
+        </scene>
+        <!--Tarea 2 JSON, Core Data-->
+        <scene sceneID="2Vt-hP-gR1">
+            <objects>
+                <navigationController title="Tarea 2 JSON, Core Data" automaticallyAdjustsScrollViewInsets="NO" id="ixz-HM-gA4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="GUf-0R-dHk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.58039215690000001" green="0.066666666669999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZyP-bw-bvz">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="q6S-fv-Cew" kind="relationship" relationship="rootViewController" id="i9o-Rw-rgw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gwy-RR-Cv0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513.04347826086962" y="-116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cartoon-radio" width="60" height="60"/>
+        <image name="favorito" width="60" height="60"/>
+        <image name="fondo-homero" width="60" height="60"/>
+        <image name="play-music_icon-icons.com_71385" width="60" height="60"/>
+        <image name="star.fill" catalog="system" width="64" height="58"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="A7L-e1-OvA"/>
+    </inferredMetricsTieBreakers>
+</document>
